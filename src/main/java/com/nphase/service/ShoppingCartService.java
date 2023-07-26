@@ -56,8 +56,6 @@ public class ShoppingCartService {
         if (quantity > discountPolicy.itemThreshold) {
             // Calculate the number of items to apply the discount to
             discountedQuantity = quantity;
-            //- (quantity / discountPolicy.itemThreshold);
-
         }
 
         // Calculate the product total after applying the discount
