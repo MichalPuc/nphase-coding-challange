@@ -27,6 +27,7 @@ public class ShoppingCartService {
         categoryDiscountPolicies.put(category, discountPolicy);
     }
 
+
     public BigDecimal calculateTotalPrice(ShoppingCart shoppingCart) {
         BigDecimal total = BigDecimal.ZERO;
 
@@ -56,8 +57,6 @@ public class ShoppingCartService {
         if (quantity > discountPolicy.itemThreshold) {
             // Calculate the number of items to apply the discount to
             discountedQuantity = quantity;
-            //- (quantity / discountPolicy.itemThreshold);
-
         }
 
         // Calculate the product total after applying the discount
